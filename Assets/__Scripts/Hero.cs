@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[SerializeField]
-private float _shieldLevel = 1;
+
 
 
 public class Hero : MonoBehaviour {
@@ -13,7 +12,8 @@ public class Hero : MonoBehaviour {
 	public float	rollMult = -45;
 	public float  	pitchMult=30;
 
-	public float	shieldLevel=1;
+	[SerializeField]
+	private float _shieldLevel = 1;
 
 	public bool	_____________________;
 	public Bounds bounds;
@@ -87,7 +87,7 @@ public class Hero : MonoBehaviour {
 			if(value < 0){
 				Destroy(this.gameObject);
 				//Tell Main.S to restart the game after a delay
-				Main.sim.DelayedRestart(gameRestartDelay);
+				Main.S.DelayedRestart(gameRestartDelay);
 			}
 		}
 	}
