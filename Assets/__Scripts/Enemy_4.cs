@@ -52,7 +52,7 @@ public class Enemy_4 : Enemy {
 
 	public override void Move(){
 		float u = (Time.time - timeStart) / duration;
-		if (u >= 1) {
+		if (u > 1) {
 			InitMovement();
 			u=0;
 		}
