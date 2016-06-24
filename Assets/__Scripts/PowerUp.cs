@@ -48,10 +48,6 @@ public class PowerUp : MonoBehaviour {
 
 		birthTime = Time.time;
 	}
-	// Use this for initialization
-	void Start () {
-	
-	}
 
 	void Update () {
 		//Manually rotate the Cube child every Update()

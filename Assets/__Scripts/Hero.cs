@@ -31,7 +31,7 @@ public class Hero : MonoBehaviour {
 
 	void Awake(){
 		S = this;
-		bounds = Utils.CombineBoundsOfChildren (this.gameObject);
+		bounds = Utils.CombineBoundsOfChildren(this.gameObject);
 	}
 		
 
@@ -39,8 +39,8 @@ public class Hero : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Reset the weapons to start _Hero with 1 blaster
-		ClearWeapons ();
-		weapons [0].SetType (WeaponType.blaster);
+		ClearWeapons();
+		weapons[0].SetType(WeaponType.blaster);
 	}
 	
 	// Update is called once per frame
@@ -83,7 +83,7 @@ public class Hero : MonoBehaviour {
 		if (go != null) {
 			//Announce it
 			//Make sure it's not the same triggering go as last time
-			if (go ==lastTriggerGo){
+			if (go == lastTriggerGo){
 				return;
 			}
 			lastTriggerGo = go;
